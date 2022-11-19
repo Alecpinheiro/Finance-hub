@@ -5,3 +5,4 @@ app.debug = True
 
 from project.users.controller import *
 from project.categories.cat_controller import *
+from project.currencies.currencies_controller import *
