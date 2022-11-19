@@ -4,7 +4,7 @@ from flask import jsonify, request
 from project.users.model import UserModel
 
 
-@app.route('/users', methods=['GET', 'POST', 'PUT'])
+@app.route('/users', methods=['GET', 'POST'])
 def get_users():
     user_model = UserModel()
 
