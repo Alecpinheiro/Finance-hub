@@ -4,7 +4,7 @@ from flask import jsonify, request
 from project.transaction_type.transaction_model import TransactionModel
 
 
-@app.route('/transactions', methods=['GET'])
+@app.route('/transactions_type', methods=['GET'])
 def get_transactions():
     transaction_model = TransactionModel()
 
@@ -13,7 +13,7 @@ def get_transactions():
         return jsonify(transactions_list)
 
 
-@app.route('/transactions/<id_transaction>/', methods=['GET'])
+@app.route('/transactions_type/<id_transaction>/', methods=['GET'])
 def single_transaction(id_transaction=0):
     transaction_model = TransactionModel()
 
