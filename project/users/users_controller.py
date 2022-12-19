@@ -1,7 +1,7 @@
 from project import app
 from flask import jsonify, request
 
-from project.users.model import UserModel
+from project.users.users_model import UserModel
 
 
 @app.route('/users', methods=['GET', 'POST'])
